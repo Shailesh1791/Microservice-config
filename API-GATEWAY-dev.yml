@@ -7,7 +7,7 @@ spring:
         predicates:
           - Path=/users/**
         filters:
-        - name: AuthenticationFilter
+        - name: HotalPreFilter
        
       - id: RATING-SERVICE
         uri: lb://RATING-SERVICE
