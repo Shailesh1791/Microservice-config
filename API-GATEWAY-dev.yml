@@ -8,6 +8,7 @@ spring:
           - Path=/users/**
         filters:
         - name: HotalPreFilter
+        - name: HotalPostFilter
        
       - id: RATING-SERVICE
         uri: lb://RATING-SERVICE
