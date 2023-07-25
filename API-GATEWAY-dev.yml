@@ -6,6 +6,8 @@ spring:
         uri: lb://USER-SERVICE
         predicates:
           - Path=/users/**
+        filters:
+        - name: AuthenticationFilter
        
       - id: RATING-SERVICE
         uri: lb://RATING-SERVICE
